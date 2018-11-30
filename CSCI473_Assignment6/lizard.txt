@@ -1,0 +1,13 @@
+﻿Curtis,Margot,Lucy,Carrot
+January,19,3,24,5
+February,0,9,13,7
+March,4,13,3,7
+April,1,12,6,20
+May,13,17,7,3
+June,8,9,10,11
+July,2,1,0,8
+August,2,0,8,10
+September,11,12,21,31
+October,10,7,1,11
+November,10,20,3,12
+December,9,7,8,0

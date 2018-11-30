@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.actualGraph2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.actualGraph2)).BeginInit();
             this.SuspendLayout();
@@ -38,13 +40,21 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.actualGraph2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
+            legend1.Name = "Lizards";
+            legend1.Title = "Lizards";
             this.actualGraph2.Legends.Add(legend1);
             this.actualGraph2.Location = new System.Drawing.Point(12, 12);
             this.actualGraph2.Name = "actualGraph2";
             this.actualGraph2.Size = new System.Drawing.Size(1061, 538);
             this.actualGraph2.TabIndex = 0;
             this.actualGraph2.Text = "chart1";
+            title1.Name = "Title1";
+            title1.Text = "How Many Crickets My Lizards Eat Per Month";
+            title2.Alignment = System.Drawing.ContentAlignment.BottomLeft;
+            title2.Name = "Title2";
+            title2.Text = "Number of Crickets";
+            this.actualGraph2.Titles.Add(title1);
+            this.actualGraph2.Titles.Add(title2);
             // 
             // Graph2
             // 

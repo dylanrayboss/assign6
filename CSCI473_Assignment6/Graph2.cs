@@ -23,18 +23,19 @@ namespace CSCI473_Assignment6
             int counter = 0;
             InitializeComponent();
             this.actualGraph2.ChartAreas[0].AxisX.Interval = 1;
-            foreach (var line in Variables.series)
+            this.Text = "How Many Crickets My Lizards Eat Per Month";
+            foreach (var line in Variables.seriesLizard)
             {
                 if (counter == Variables.limit)
                     break;
                 this.actualGraph2.Series.Add(line);
                 counter++;
             }
-            foreach (var people in Variables.people)
+            for (int i = 0; i < counter; i++)
             {
-                for (int i = 0; i < counter; i++)
+                foreach (var crickets in Variables.crickets)
                 {
-                    this.actualGraph2.Series[i].Points.AddXY(people[0], people[i + 1]);
+                    this.actualGraph2.Series[i].Points.AddXY(crickets[0], crickets[i + 1]);
                     this.actualGraph2.Series[i].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
                     this.actualGraph2.Series[i].BorderWidth = 5;
                 }
